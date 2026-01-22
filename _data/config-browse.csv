@@ -1,7 +1,6 @@
 field,display_name,btn,hidden,sort_name,facet_name
-date,Date,,,Date Created
 description,,,true,
 author,Author,,,
-required_cast,,true,,Required Cast
-length,,true,,Length
-age_group,,,true,Age Group
+required_cast,,true,,Required Cast,Required Cast
+length,,true,,Length,Length
+age_group,,,true,Age Group,Age Group
