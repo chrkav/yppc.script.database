@@ -5,11 +5,11 @@ permalink: /about.html
 # include CollectionBuilder info at bottom
 credits: true
 # featured-image value can be one objectid for a photo object in this collection, a relative path to an image in this project, or a full url to any image. If left blank, no featured image will appear at top of About page.
-about-featured-image: demo_031
+about-featured-image: 
 # set background-position for featured image, "center", "top", "bottom"
 position: bottom
 # major heading to display over featured image
-heading: About the Collection
+heading: 
 # paragraph text below heading in featured image
 sub-heading: 
 # additional padding added to the feature to increase size. Give value in em or px, e.g. "5em".
@@ -18,22 +18,19 @@ padding: 6em
 # Look in _includes/feature for options to easily add features to the page
 ---
 
-## About CollectionBuilder CSV
+## About the Collection
 
-This demo collection features items from the University of Idaho Library's [Digital Collections](https://www.lib.uidaho.edu/digital/), and is build using [CollectionBuilder-CSV](https://github.com/CollectionBuilder/collectionbuilder-csv).
+This collection consists of a catalog of the scripts collected by the Young People's Performing Company of Durham, North Carolina. Many of the scripts are unique, having been written by the founders of the theater or by other members of the community. 
 
-CollectionBuilder-CSV is a "Stand Alone" template for creating digital collection and exhibit websites using Jekyll, given:
+## The History of the Young People's Performing Company
 
-- a CSV of collection metadata
-- a folder of images, PDFs, audio, or video files
+Young People’s Performing Company was established as a 501c3 non-profit in 1982 by Jeffryn and Ty Stephens, whose mission was to ensure that any young person who wanted it could have the experience of being on stage. Focusing on immersing young people from preschool through high school in the dramatic arts, YPPC staged over 1,000  productions over the course of its 42-year history.
 
-Driven by your collection metadata, the template generates engaging visualizations to browse and explore your objects.
-The resulting static site can be hosted on any basic web server.
+YPPC has partnered with the Durham Arts Council since 1985, who generously provides the Company’s class, rehearsal, and performance space in the WTVD Theater and the Jeffryn Stephens Stage. With the generous support of donors and grants from the Durham Arts Council and North Carolina Arts Council, YPPC stages at  least two musicals and more than 20 productions annually.
 
-[CollectionBuilder](https://github.com/CollectionBuilder/) is an set of open source tools for creating digital collection and exhibit websites that are driven by metadata and powered by modern static web technology.
-See [CB Docs](https://collectionbuilder.github.io/cb-docs/) for detailed information.
+YPPC historically offered classes in theater, playwriting, improv, tech, and other aspects of the performing arts. Many alumni go on to audition for college and university theater programs and conservatories, and numerous alumni have become accomplished theater professionals, pursuing careers as writers,  directors, actors, and skilled technicians.
+
+The mission of YPPC continues under the artistic direction of Jessica Sabatini, an alumnus of the company, who was appointed by the Board of Directors in 2023.
 
 {% include feature/image.html objectid="demo_001" width="75" %} 
 
-<!-- IMPORTANT!!! DELETE this comment and the include below when you are finished editing this page for your collection. The include below introduces about page features. They will show up on your collection's about page until you delete it.  -->
-{% include cb/about_the_about.md %} 
