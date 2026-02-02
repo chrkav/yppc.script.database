@@ -37,7 +37,7 @@
     var counts = terms.map(function(obj){ return obj[1]; });
     var countMax = counts.reduce(function(a, b) { return Math.max(a, b); });
     var cloud = document.getElementById("{{ cloud_id }}");
-    {% if include.shuffle == true %}
+    {% if include.shuffle == false %}
     /* Fisher-Yates shuffle https://bost.ocks.org/mike/shuffle/ */
     function shuffle(array) {
         var m = array.length, t, i;
@@ -56,7 +56,7 @@
     function makeGrid(array) {
         var i, size;
         var items = "";
-        {% if include.shuffle == true %}shuffle(array);{% endif %}
+        {% if include.shuffle == false %}shuffle(array);{% endif %}
         for (let i = 0; i < array.length; i++) {
             size = mapSize(array[i][1]);
             items += '<a class="btn btn-{{ include.button | default: "outline-primary" }} m-2 tagcloud' + size + '" href="{{ "/browse.html" | relative_url }}#' + array[i][2] + ':' + encodeURIComponent(array[i][0]) + '" >' + array[i][0] + '</a>';

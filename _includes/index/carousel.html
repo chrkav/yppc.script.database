@@ -4,7 +4,7 @@
     This include adds a Bootstrap Carousel component populated with randomly selected image items, designed with index page in mind. 
     https://getbootstrap.com/docs/5.1/components/carousel/
 
-    E.G. --> {% include index/carousel.html title="Sample Items" height=450 %}
+    E.G. {% include index/carousel.html title="Sample Items" height=450 %}
 
     Options:
 
@@ -51,11 +51,11 @@
             <div id="carouselInner" class="carousel-inner">
                 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="imageCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="imageCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -68,7 +68,7 @@
 {%- endcomment -%}
 <script>
     /* add item data */
-    // title,objectid,image_thumb/small
+    // title,author,description
     var carouselItems = [ {% for c in carousel-items %}[ {{ c.title | escape | jsonify }}, "{{ c.objectid }}", {% if c.image_small %}{{ c.image_small | relative_url | jsonify }}{% else %}{{ c.image_thumb | relative_url | jsonify }}{% endif %}, "{{ c.parentid }}", {{ c.image_alt_text | default: c.title | escape | jsonify }} ]{% unless forloop.last %}, {% endunless %}{% endfor %}];
     /* shuffle items */
     carouselItems.sort(function() { return 0.5 - Math.random() });
@@ -86,10 +86,10 @@
         if (carouselItems[i][3]){
             itemLink = '{{ '/items/' | relative_url }}' + carouselItems[i][3] + '.html#' + carouselItems[i][1];}
         else {
-            itemLink = '{{ '/items/' | relative_url }}' + carouselItems[i][1] + '.html';
+            itemLink = '{{ '/items/' | relative_url }}' + carouselItems[i][1] + '.html#';
         }   
         // create indicator 
-        indicator = `<button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="${i.toString()}" ${ i == 0 ? 'class="active" aria-current="true" ' : '' }aria-label="Slide ${i.toString()}"></button>`;
+        indicator = `<button type="button" data-bs-target="imageCarousel" data-bs-slide-to="${i.toString()}" ${ i == 0 ? 'class="active" aria-current="true" ' : '' }aria-label="Slide ${i.toString()}"></button>`;
         // create slide
         slide = `<div class="carousel-item py-2${ i == 0 ? ' active' : '' }">
             <img class="d-block h-100 mx-auto lazyload" alt="${carouselItems[i][4]}" data-src="${itemImg}">
