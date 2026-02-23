@@ -4,6 +4,6 @@ date,true,true
 author,true,false
 description,true,true
 age_group,true,true
-required_cast,true,false
-length,true,false
-licensing,true,false
+required_cast,true,true
+length,true,true
+licensing,true,true
