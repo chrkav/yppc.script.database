@@ -1,6 +1,5 @@
 display_name,stub,dropdown_parent
-Home,/,
-Browse,/browse.html,
+Browse,/,
 Age Group,/age_group.html,
 Required Cast,/required_cast.html,
 Length,/length.html,
