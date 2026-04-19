@@ -8,9 +8,12 @@ layout: page
 
     {% include index/description.html %}
     {% include index/carousel.html title="Sample Items" %}
+
     
   </div>
   <div class="col-md-4">  
+
+    {% if site.data.theme.advanced-search == true %}{% include advanced-search-modal.html %}{% endif %}
 
     {% include index/featured-terms.html field="age_group" title="Age Group" btn-color="primary" %}
 

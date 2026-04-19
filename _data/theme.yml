@@ -14,7 +14,8 @@ featured-image-alt-text: # add alt text if using url for featured-image (objecti
 home-title-y-padding: 15em # the margin from the top your title portion will appear.
 # optional: change position of background image, center, top, bottom
 home-banner-image-position: center # Default is top
-
+advanced-search: true
+faceted-search: true
 
 ##########
 # Browse PAGE
