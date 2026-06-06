@@ -1,8 +1,8 @@
 display_name,stub,dropdown_parent
 Browse,/,
+Genre,/genre.html,
 Age Group,/age_group.html,
 Required Cast,/required_cast.html,
-Length,/length.html,
 Timeline,/timeline.html,
 Data,/data.html,
 About,/about.html,
