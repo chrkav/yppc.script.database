@@ -2,8 +2,6 @@
 title: Length
 layout: cloud
 permalink: /length.html
-# Default locations page is configured in "_data/theme.yml"
-# leave cloud-fields as "site.data.theme.locations-fields"
 cloud-fields: length
 ---
 

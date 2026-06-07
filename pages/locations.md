@@ -2,8 +2,6 @@
 title: Required Cast
 layout: cloud
 permalink: /required_cast.html
-# Default locations page is configured in "_data/theme.yml"
-# leave cloud-fields as "site.data.theme.locations-fields"
 cloud-fields: required_cast
 ---
 
